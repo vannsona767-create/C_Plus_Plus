@@ -18,3 +18,8 @@
 C++ was developed as extension of C, and both language have almost the same syntax.
 
 The main difference between C and C++ is that C++ supports classes and object , while C does not
+
+
+# how to remove .exe files
+    git rm --cached *.exe
+    git rm --cached -r .
