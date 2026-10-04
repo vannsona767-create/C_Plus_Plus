@@ -4,6 +4,7 @@ using namespace std;
 // =====================
 // Base class - Employee
 // =====================
+
 class Employee{
     protected: // protected access specifier
         string name;
@@ -27,6 +28,7 @@ class Employee{
 // =======================
 // Child class - Developer 
 // =======================
+
 class Developer : public Employee{
     private: 
         // Language that dev uses to create the project
@@ -63,9 +65,11 @@ class Manager : public Employee{
 };  
 
 int main(){
+
     // =========
     // Developer 
     // =========
+
     cout << endl;
     cout << "===============| Company Information |=================" << endl;  cout << endl;
     cout << "=====> Developer" << endl; 
@@ -80,5 +84,6 @@ int main(){
     cout << "=====> Manager" << endl;
     Manager manager("Sokha", "Project Manager", 6000, 120);
     manager.showManager_Infor();
+
 return 0;
 }
