@@ -15,4 +15,17 @@ Rule 1 — Same name as class
 Rule 2 — Has ~
 Rule 3 — No return type
 
-3. Destructor Has No Parameters
+# Destructor Has No Parameters
+
+# use of destructor is 
+    Resource cleanup.
+
+# Resources can include:
+
+. dynamically allocated memory
+. files
+. database connections
+. sockets
+. locks
+. operating-system resources
+. other objects/resources your class owns
