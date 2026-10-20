@@ -23,6 +23,7 @@ class Rectangle : public Calculation{
             return width * length;
         }
 };
+
 // Circle 
 class Circle : public Calculation{
     private:
@@ -34,13 +35,25 @@ class Circle : public Calculation{
         double area() const override{
             return 3.14 * redius * redius;
         }
-        
 };
-int main(){
-    Rectangle rectangle(5, 5);
-    Circle circle(5);
 
-    Calculation * cal[] = {&rectangle, &circle};
+// Square
+class Square : public Calculation {
+    private:
+        double width;
+    public:
+        // square constructor
+        Square(double w) : width(w){};
+
+        double area() const override{
+            return width * width;
+        }
+};        
+int main(){
+    Rectangle rectangle(5,5);
+    Circle circle(5);
+    Square square(3);
+    Calculation * cal[] = {&rectangle, &circle, &square};
 
     for(Calculation * calculation : cal){
         cout << calculation->area() << endl;
